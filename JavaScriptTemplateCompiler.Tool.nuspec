@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>JavaScriptTemplateCompiler.Tool</id>
+        <version>0.1.0</version>
+        <title>JavaScript Template Compiler Tool</title>
+        <authors>smonn</authors>
+        <projectUrl>https://github.com/smonn/JavaScriptTemplateCompiler</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Command line utility for running JSTC.</description>
+        <dependencies>
+            <dependency id="CommandLineParser" version="1.9.71" />
+	    <dependency id="JavaScriptTemplateCompiler" version="0.1.0" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="JSTC.Tool\bin\Release\JSTC.Tool.exe" target="tools\JSTC.Tool.exe" />
+        <file src="JSTC.Tool\bin\Release\JSTC.Tool.exe.config" target="tools\JSTC.Tool.exe.config" />
+    </files>
+</package>
