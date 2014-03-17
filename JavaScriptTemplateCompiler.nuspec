@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>JavaScriptTemplateCompiler</id>
+        <version>0.1.0</version>
+        <title>JavaScript Template Compiler</title>
+        <authors>smonn</authors>
+        <projectUrl>https://github.com/smonn/JavaScriptTemplateCompiler</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Compiles HTML files (JavaScript templates) into JavaScript variables, stored in a single JS-file.</description>
+    </metadata>
+    <files>
+        <file src="JSTC\bin\Release\JSTC.dll" target="lib\net45\JSTC.dll" />
+    </files>
+</package>
