@@ -40,7 +40,7 @@ namespace JSTC.Extensions
             {
                 if (Char.IsWhiteSpace(sb[i]))
                 {
-                    if (prevIsNotWhiteSpace)
+                    if (prevIsNotWhiteSpace && (sb[i - 1] != '>' && sb[i + 1] != '<'))
                     {
                         prevIsNotWhiteSpace = false;
                         sb[dest] = ' ';
@@ -56,6 +56,31 @@ namespace JSTC.Extensions
             }
 
             sb.Length = dest;
+
+            return sb;
+        }
+
+        public static StringBuilder EscapeQuotes(this StringBuilder sb)
+        {
+            if (sb.Length == 0) return sb;
+            sb.Replace("\"", "\\\"");
+            return sb;
+        }
+
+        public static StringBuilder ClearTagWhiteSpace(this StringBuilder sb)
+        {
+            if (sb.Length == 0) return sb;
+
+            //var start = sb.Length - 1;
+
+            //for (var i = start; i >= 2; i -= 1)
+            //{
+            //    if (sb[i] == '<' && sb[i - 1] == ' ' && sb[i - 2] == '>')
+            //    {
+            //        sb.Remove(i - 1, 1);
+            //        i -= 2;
+            //    }
+            //}
 
             return sb;
         }

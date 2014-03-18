@@ -83,6 +83,7 @@ namespace JSTC.Compilation
 
             content.CompactWhiteSpaces();
             content.Replace("\"", "\\\"");
+            content.Replace("> <", "><");
 
             var template = String.Format("{0}[\"{1}\"] = \"{2}\";", _config.JsObject, fileName, content.ToString());
 

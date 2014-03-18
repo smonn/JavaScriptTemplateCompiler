@@ -12,7 +12,7 @@ namespace JSTC.Tests
             var config = new JSTCConfiguration();
 
             Assert.AreEqual(".tmpl.html", config.Extension);
-            Assert.AreEqual("C:\\src\\JSTemplateCompiler\\JSTC.Tests", config.Path);
+            Assert.AreEqual(".", config.Path);
         }
     }
 }
